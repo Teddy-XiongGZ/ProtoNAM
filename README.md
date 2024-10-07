@@ -142,10 +142,7 @@ python src/plot_layer.py \
 
 The generated shape plots are also saved at `./fig/housing/ProtoNAM/Optimal_0`. The file names are "FeatureName_LayerIndex.png". Here we present the layer-wise interpretation for the "Longitude" feature as an example.
 
-<img src="readme_figs/Longitude_1.png" alt="Alt text" width="24%"/>
-<img src="readme_figs/Longitude_2.png" alt="Alt text" width="24%"/>
-<img src="readme_figs/Longitude_3.png" alt="Alt text" width="24%"/>
-<img src="readme_figs/Longitude_4.png" alt="Alt text" width="24%"/>
+<img src="readme_figs/Longitude_1.png" alt="Alt text" width="24%"/><img src="readme_figs/Longitude_2.png" alt="Alt text" width="24%"/><img src="readme_figs/Longitude_3.png" alt="Alt text" width="24%"/><img src="readme_figs/Longitude_4.png" alt="Alt text" width="24%"/>
 
 ## Citation
 ```bibtex
