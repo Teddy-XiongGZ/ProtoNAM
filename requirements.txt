@@ -1,0 +1,8 @@
+torch==1.13.1
+pandas==1.5.2
+numpy==1.23.5
+scikit-learn==1.2.0
+tqdm==4.64.1
+tensorboard==2.11.0
+matplotlib==3.6.2
+category_encoders==2.6.3
