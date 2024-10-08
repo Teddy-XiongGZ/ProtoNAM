@@ -1,6 +1,6 @@
 # ProtoNAM: Prototypical Neural Additive Models for Interpretable Deep Tabular Learning
 
-ProtoNAM is a new deep tabular learning method, which introduces prototypes into neural networks in the framework of generalized additive models (GAMs). With the introduced prototype-based feature activation and hierarchical shape function modeling, ProtoNAM can flexibly model the irregular mapping from tabular features to the model predictions, with additional insights (layer-wise explanations) into learned shape functions.
+ProtoNAM is a new deep tabular learning method, which introduces prototypes into neural networks in the framework of generalized additive models (GAMs). With the introduced prototype-based feature activation and hierarchical shape function modeling, ProtoNAM can flexibly model the irregular mapping from tabular features to the model predictions, with additional insights (e.g., layer-wise explanations) into learned shape functions.
 
 [![Preprint](https://img.shields.io/badge/preprint-available-brightgreen)](https://arxiv.org/abs/2410.04723)
 
