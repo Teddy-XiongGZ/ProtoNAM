@@ -1,8 +1,8 @@
 # ProtoNAM: Prototypical Neural Additive Models for Interpretable Deep Tabular Learning
 
-`ProtoNAM` is a new deep tabular learning method, which introduces prototypes into neural networks in the framework of generalized additive models (GAMs). With the introduced prototype-based feature activation and hierarchical shape funciton modeling, ProtoNAM can flexibly model the irregular mapping from tabular features to the model predictions, with additional insights (layer-wise explanations) into learned shape functions.
+ProtoNAM is a new deep tabular learning method, which introduces prototypes into neural networks in the framework of generalized additive models (GAMs). With the introduced prototype-based feature activation and hierarchical shape function modeling, ProtoNAM can flexibly model the irregular mapping from tabular features to the model predictions, with additional insights (layer-wise explanations) into learned shape functions.
 
-[![Preprint](https://img.shields.io/badge/preprint-available-brightgreen)](https://arxiv.org/abs/)
+[![Preprint](https://img.shields.io/badge/preprint-available-brightgreen)](https://arxiv.org/abs/2410.04723)
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ Please install the required packages using: `pip install -r requirements.txt`.
 
 ### Running ProtoNAM on existing datasets in our paper
 
-The running scripts are included in the `./scripts` directory. Here we give an example to run ProtoNAM on housing dataset
+The running scripts are included in the `./scripts` directory. Here we give an example of running ProtoNAM on the Housing dataset
 
 ```script
 seed=0
@@ -68,18 +68,18 @@ To run ProtoNAM on new datasets, please follow the instructions below to add the
     - cat_features: (optional) a list of strings for the column names of the categorical features
 2. In `src/config.py`, add the corresponding codes in the `__init__` function to allow the loading of the new dataset. The code can be similar to the existing ones in the file:
     - ```python
-        if data.lower() == "mimic2":
-            dataset = load_mimic2(fold=fold)
-        elif data.lower() == "mimic3":
-            dataset = load_mimic3(fold=fold)
-        elif data.lower() == "income":
-            dataset = load_income(fold=fold)
-        elif data.lower() == "housing":
-            dataset = load_housing()
-        elif data.lower() == NEW_DATASET_NAME.lower():
-            dataset = NEW_DATASET_LOADING_FUNC(**ARGS)
-        else:
-            raise ValueError("Data {:s} not supported".format(data))
+        >>> if data.lower() == "mimic2":
+        >>>     dataset = load_mimic2(fold=fold)
+        >>> elif data.lower() == "mimic3":
+        >>>     dataset = load_mimic3(fold=fold)
+        >>> elif data.lower() == "income":
+        >>>     dataset = load_income(fold=fold)
+        >>> elif data.lower() == "housing":
+        >>>     dataset = load_housing()
+        >>> elif data.lower() == NEW_DATASET_NAME.lower():
+        >>>     dataset = NEW_DATASET_LOADING_FUNC(**ARGS)
+        >>> else:
+        >>>     raise ValueError("Data {:s} not supported".format(data))
                     
       ```
 
@@ -146,4 +146,10 @@ The generated shape plots are also saved at `./fig/housing/ProtoNAM/Optimal_0`. 
 
 ## Citation
 ```bibtex
+@article{xiong2024protonam,
+  title={ProtoNAM: Prototypical Neural Additive Models for Interpretable Deep Tabular Learning},
+  author={Xiong, Guangzhi and Sinha, Sanchit and Zhang, Aidong},
+  journal={arXiv preprint arXiv:2410.04723},
+  year={2024}
+}
 ```
